@@ -7,7 +7,7 @@ public class Run {
 		String classpath = System.getProperty("java.class.path");
 		args =
 			new String[] {
-				"-i", "in",
+				"-i", "src/main/java",
 				"--source-classpath", classpath,
 				"--compliance", "8",
 				"-o", "out",
