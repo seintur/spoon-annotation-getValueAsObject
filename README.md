@@ -7,14 +7,14 @@ https://github.com/INRIA/spoon/blob/0f8d748df3186304f76eb77aaf3ac7c3238127bf/src
 
 This project declares an annotation processor (MyProcessor) that processes
 
-public class C {
-	@MyAnnot(name="a"+Integer.BYTES)
-	void m() {}
-}
+	public class C {
+		@MyAnnot(name="a"+Integer.BYTES)
+		void m() {}
+	}
 
 The project can be launched with
 
-  mvn clean compile exec:java
+	mvn clean compile exec:java
 
 The execution fails with a java.lang.StackOverflowError due to an infinite recursion
 
